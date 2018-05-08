@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Noble Absurdity</title>
+    <meta charSet="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="A SELFIE BOOTH">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="AllTemplates.min.css"> 
+    <link rel="icon" href="img/favicon.png" type="image/gif" sizes="96x96">
+
+    <style>
+      .launchaco-promo {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        cursor: pointer;
+        width: 0;
+        height: 0;
+        z-index: 999999;
+      }
+
+      .launchaco-promo__active {
+        width: initial;
+        height: initial;
+      }
+
+      .launchaco-promo-speechbubble {
+        font-family: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+        position: absolute;
+        left: 50px;
+        top: -11px;
+        padding: 9px;
+        color: white;
+        border-radius: 3px;
+        background: linear-gradient(#227ef7, #1290fc);
+        font-size: 14px;
+        font-weight: 600;
+        width: 93px;
+        box-sizing: border-box;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .15s ease-in-out;
+      }
+
+      .launchaco-promo__active:hover .launchaco-promo-speechbubble {
+        opacity: 1;
+      }
+
+      .launchaco-promo svg {
+        transition: all .3s ease-in-out;
+        opacity: 0;
+      }
+
+      .launchaco-promo__active svg {
+        opacity: 1;
+      }
+
+      .launchaco-promo-speechbubble:before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        left: -4px;
+        bottom: 10px;
+        border-radius: 3px;
+        background: #1290fc;
+        z-index: 2;
+        position: absolute
+      }
+
+      .launchaco-promo__active .launchaco-promo-speechbubble__animate {
+        animation: popinpopup 3s linear forwards 0.1s;
+      }
+
+      @keyframes popinpopup {
+        0% {
+          opacity: 0;
+          transform: translate3d(0, 3px, 0)
+        }
+        7%,
+        93% {
+          opacity: 1;
+          transform: translate3d(0, 0, 0)
+        }
+        100% {
+          opacity: 0;
+          transform: translate3d(0, -4px, 0)
+        }
+      }
+
+      .launchaco-promo-animate:hover {
+        opacity: 1 !important;
+      }
+    </style>
+
+
+    <style>
+    </style>
+  </head>
+
+  <body class="font-neutral">
+    <div class="ocher-white">
+      <!---->
+      <header class="header">
+        <div class="container-lrg">
+          <div class="flex col-12 spread">
+            <a href="/" class="logo primary-color launchaco-builder-hoverable logo">Noble Absurdity</a>
+            <a href="#main-menu" id="menu" class="menu-toggle">
+              <b class="nav-link mr0 secondary-color">☰</b>
+            </a>
+            <nav id="main-menu" role="navigation" class="main-menu">
+              <a href="#" id="main-menu-close" class="menu-close">
+                <span class="bold">✕</span>
+              </a>
+              <a href="/#feature-1" class="nav-link secondary-color">About</a>
+              <a href="/#team-2" class="nav-link secondary-color">Team</a>
+              <a href="mailto:noble.absurdity@gmail.com" class="nav-link secondary-color">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <section class="section">
+        <div class="container-lrg flex">
+          <div class="flex flex-column col-6 center-vertical mobile-text-center mb40">
+            <h1 class="heading primary-color launchaco-builder-hoverable">A SELFIE BOOTH</h1>
+            <h2 class="subheading secondary-color mt20 launchaco-builder-hoverable">
+              <div style="font-size: 17px">You are cordially invited at Palazzo Mora, Palazzo Bembo and Giardini Marinaressa. Exhibitions open 26 May - 25 November 2018, 10:00 - 18:00, closed on Tuesdays.</div>
+              <div class="text-center" style="font-weight:bold">“Time - Space - Existence”</div>
+              <div class="text-center">FREE ENTRY</div>
+
+                 </h2>
+            <div class="mt40">
+              <a href="http://fb.me/AbsurdityBooth" target="_blank" class="button mobile-text-center mt10 launchaco-builder-hoverable mobile-text-center accent-bg primary-color">
+                <span> Check Selfies </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 flex center-horizontal center-vertical">
+            <div class="launchaco-builder-hoverable">
+              <div class="">
+                <img src="img/main.jpg" alt="Screenshot of small App" class="custom-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="feature-1" class="section ocher-white" sitemeta="[object Object]" activepage="Landing">
+      <div class="container">
+        <div class="col-12 text-center flex flex-column center-horizontal">
+          <!---->
+          <h3 class="heading primary-color launchaco-builder-hoverable">About</h3>
+          <p class="paragraph mt20 secondary-color launchaco-builder-hoverable">Borrowing from Ruskin, who talks of the ‘noble grotesque,’ this installation traces the many arches that exist between a hyperbolic parabola (a funicular shape) and a Venetian arch, his ‘model of perfection.’ Each layer is then a combination
+            or a transition between two funda- mentally different arches; two fundamentally different ideologies, two fundamentally different methods of construction. If Venetian architecture is an ‘ef gy of an ideal society,’ each arch has within it
+            a trace of a past that is as present today as it ever was, hence connecting two historical moments.</p>
+
+            <p class="paragraph mt20 secondary-color launchaco-builder-hoverable">Far from an ideal society, today we are obsessed with our re ection and its re ection on the web. The installation consists of many golden
+            mirrors; this is a ‘sel e booth.’ Cameras will be trig- gered upon one’s entry to the booth. As such, the act of visiting the installation is one and the same as the act of taking a sel e, as this is a space of self-re ection. The sel e will
+            be automati- cally posted and geo-tagged, and tracked on social media.</p>
+        </div>
+      </div>
+      <div class="container-lrg mt75">
+        <div class="col-12 launchaco-builder-hoverable">
+          <div class="">
+            <img src="img/all.jpg" alt="Screenshot of application" class="custom-img">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team-2" class="section ocher-white" sitemeta="[object Object]" activepage="Landing">
+      <div class="container text-center mb35">
+        <h3 class="heading primary-color launchaco-builder-hoverable">Team</h3>
+        <!---->
+      </div>
+      <div class="container flex wrap text-center">
+        <div class="col-6 mt40 flex launchaco-builder-hoverable">
+          <div class="team-card flex flex-column center-vertical center-horizontal w100">
+            <img class="user-image mb20" src="img/1.jpg" alt=""> 
+            <!-- <div class="user-image mb20" style="background-image: url(&quot;&quot;);"></div> -->
+            <div>
+              <b class="bold primary-color">Ghazal Abbasy-Asbagh</b>
+              <p class="paragraph primary-color mt10"></p>
+              <p class="paragraph secondary-color mt20">an architect and educator. She teaches and practices between Beirut and Manhattan.</p>
+            </div>
+            <!---->
+          </div>
+        </div>
+        <div class="col-6 mt40 flex launchaco-builder-hoverable">
+          <div class="team-card flex flex-column center-vertical center-horizontal w100">
+            <!---->
+            <div>
+              <b class="bold primary-color">Natacha Bou Akl</b>
+              <p class="paragraph primary-color mt10"></p>
+              <p class="paragraph secondary-color mt20">a student of architecture in her fifth year at the American University in Beirut.</p>
+            </div>
+            <!---->
+          </div>
+        </div>
+        <div class="col-6 mt40 flex launchaco-builder-hoverable">
+          <div class="team-card flex flex-column center-vertical center-horizontal w100">
+            <img class="user-image mb20" src="img/3.jpg" alt=""> 
+            <div>
+              <b class="bold primary-color">Hans de Klrek</b>
+              <p class="paragraph primary-color mt10"></p>
+              <p class="paragraph secondary-color mt20">builds architectural objects around the globe.</p>
+            </div>
+            <!---->
+          </div>
+        </div>
+        <div class="col-6 mt40 flex launchaco-builder-hoverable">
+          <div class="team-card flex flex-column center-vertical center-horizontal w100">
+            <img class="user-image mb20" src="img/4.jpg" alt=""> 
+            <!-- <div class="user-image mb20" style="background-image: url(&quot;https://cdn.launchaco.com/images/56f20038-b110-4a99-938c-946d6abe0d87.png&quot;);"></div> -->
+            <div>
+              <b class="bold primary-color">Mohammad Awwad</b>
+              <p class="paragraph primary-color mt10"></p>
+              <p class="paragraph secondary-color mt20">an iOS developer, a geek, and a passionate seeker of good change in the world.</p>
+            </div>
+            <div class="mt30">
+              <a href="https://twitter.com/awwadeto" target="_blank" class="socialicons accent-bg twitter"></a>
+              <a href="mailto:awwadeto@gmail.com" class="socialicons accent-bg email"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer-3" class="section text-center ocher-white" sitemeta="[object Object]" activepage="Landing">
+      <div class="container col-12">
+        <!---->
+        <div>
+          <!---->
+          <a href="https://facebook.com/AbsurdityBooth" target="_blank" class="socialicons accent-bg facebook"></a>
+          <a href="mailto:noble.absurdity@gmail.com" class="socialicons accent-bg email"></a>
+        </div>
+        <div class="mt50">
+          <span class="span secondary-color">©</span>
+          <span class="span secondary-color">Noble Absurdity</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+
+</html>
